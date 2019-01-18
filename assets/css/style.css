@@ -1,0 +1,115 @@
+body {
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  margin-top: -5.8%
+}
+
+ul {
+  font: 20px sans-serif;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: none;
+}
+
+#progress {
+  background-color: white;
+  width: 0%;
+  height: 4px;
+  margin: auto;
+  border-radius: 4px;
+  position: relative;
+}
+
+#choices {
+  position: relative;
+  top: 10px;
+}
+
+#choiceCaption,
+#interactionZones,
+#nextSegments,
+#nextSegment {
+  display: none;
+}
+
+/* comment to show links */
+a {
+  color: #ffffffa6;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #000;
+  animation: choices 3s forwards;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active,
+a:focus {
+  color: white;
+  text-decoration: underline solid white
+}
+
+@keyframes choices {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+video::cue {
+  font: 60% sans-serif;
+  color: white;
+  background: none;
+  text-shadow: 0px 0px 10px #000;
+}
+
+#c {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#c:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+#c:-moz-full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+#c:-ms-fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+#c:fullscreen {
+  width: 100vw;
+  height: 100vh;
+}

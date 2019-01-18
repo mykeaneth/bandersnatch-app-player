@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Black Mirror: Bandersnatch</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script src="assets/js/bs/bandersnatch.js"></script>
+  <script src="assets/js/bs/segmentmap.js"></script>
+  <script src="assets/js/bs/subtitle.js" id="subtitle" data-label="English" data-lang="en"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</head>
+
+<body onload="onload()">
+  <div>
+    <div id="c">
+      <video id="video" loop autoplay>
+        <source src="../Black.Mirror.Bandersnatch.2018.720p.WEB-DL.x264.DUAL.mkv">
+      </video>
+      <div class="controls">
+        <div id="choiceCaption"></div>
+        <div id="progress"></div>
+        <div class="buttons">
+          <ul id="choices"></ul>
+          <ul id="interactionZones"></ul>
+          <ul id="nextSegments"></ul>
+          <ul id="nextSegment"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/subtitle-parser.js"></script>
+
+</body>
+
+</html>
