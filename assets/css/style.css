@@ -1,5 +1,5 @@
 body {
-  margin: auto;
+  margin: 0;
   text-align: center;
   overflow: hidden;
 }
@@ -7,13 +7,16 @@ body {
 video {
   width: 100%;
   height: 100%;
+  max-height: 100vh;
+  max-width: 100vw;
+  vertical-align: bottom;
 }
 
 .controls {
   margin: auto;
   width: 100%;
-  height: 100%;
-  margin-top: -5.8%
+  position: absolute;
+  transform: translateY(-100%);
 }
 
 ul {
@@ -30,6 +33,11 @@ li {
   display: block;
   flex: 0 1 auto;
   list-style-type: none;
+}
+
+#app-player {
+  height: 100vh;
+  background-color: #000;
 }
 
 #progress {
@@ -82,16 +90,18 @@ a:focus {
 }
 
 video::cue {
-  font: 60% sans-serif;
+  font: 70% sans-serif;
   color: white;
   background: none;
   text-shadow: 0px 0px 10px #000;
 }
 
 #c {
-  margin: auto;
-  height: 100%;
+  height: auto;
   width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #c:-webkit-full-screen {

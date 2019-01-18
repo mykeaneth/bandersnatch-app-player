@@ -221,7 +221,7 @@ function ontimeupdate(evt) {
   clearTimeout(timerId);
   if (segmentId && nextSegment && nextSegment != segmentId) {
     var timeLeft = segmentmap.segments[segmentId].endTimeMs - ms;
-    timerId = setTimeout(ontimeout, timeLeft, nextSegment);
+    timerId = setTimeout(ontimeout, (timeLeft + 250), nextSegment);
   }
 
   if (currentSegment != segmentId) {
